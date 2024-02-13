@@ -4,7 +4,9 @@
 
 <summary>Step 0: Installation and Setup</summary>
 
-The first thing you need to do to start using BYOB is [download](https://github.com/malwaredllc/byob) the code from Github.
+Prepare new-clean Ubuntu VM
+
+The first thing you need to do to start using BYOB is [download](https://github.com/malwaredllc/byob) the repository from Github.
 
 You will need to install [Docker](https://docs.docker.com/get-docker/) and [Python](https://www.python.org/downloads/) to use this software.
 
