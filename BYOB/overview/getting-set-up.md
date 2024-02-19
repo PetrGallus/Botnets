@@ -6,15 +6,26 @@
 
 Prepare new-clean Ubuntu VM
 
-The first thing you need to do to start using BYOB is [download](https://github.com/malwaredllc/byob) the repository from Github.
+The first thing you need to do to start using BYOB is [download](https://github.com/PetrGallus/Botnet-BYOB) the updated repository from Github.
 
 You will need to install [Docker](https://docs.docker.com/get-docker/) and [Python](https://www.python.org/downloads/) to use this software.
 
-Once you have downloaded the code from Github and installed the necessary software, navigate to the **/byob/web-gui** directory and run the **setup.sh** script. This will build some Docker images that are used by the payload generator to cross-compile executables.
+Sub-steps:
 
-After completing the installation and setup, you can now launch the web GUI by running the command **python3 run.py** from the **/byob/web-gui** directory.
+* prepare clean UBUNTU VM
+* sudo apt-get install git
+* git clone repository from Github
+  * git clone [https://github.com/PetrGallus/Botnet-BYOB.git](https://github.com/PetrGallus/Botnet-BYOB.git)
+* cd byob/web-gui
+  * sudo ./startup.sh
+    * it will install necessarry SW (python packages, Docker images...)
+    * after finish -> Reboot \[Y]
+* after reboot, run the script again
+  * sudo ./startup.sh
+    * you should see the running web server
+      * 127.0.0.1:5000
 
-Once it is running, you can now open your browser and go to http://0.0.0.0:5000 to use the web GUI.
+![](<../.gitbook/assets/image (1).png>)
 
 </details>
 
@@ -24,9 +35,11 @@ Once it is running, you can now open your browser and go to http://0.0.0.0:5000 
 
 Once the web app is up and running, you are now ready to create an account. You can do this clicking on the register button on the top right...
 
-
+![](../.gitbook/assets/image.png)
 
 This will you up as the sole administrator of the command & control server and restrict others from accessing it.
+
+![](<../.gitbook/assets/image (2).png>)
 
 </details>
 
